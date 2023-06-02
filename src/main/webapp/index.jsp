@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Bulma Version 0.9.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/BulmaTemplates/bulma-templates/master/css/inbox.css">
+    <link rel="stylesheet" type="text/css" href="css/inbox.css">
 </head>
 
 <body>
