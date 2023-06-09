@@ -1,6 +1,9 @@
 package co.edu.poli.ces3.dao;
 
 import java.sql.Array;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -23,13 +26,57 @@ public class Student {
         this.languages = languages;
     }
 
-    public Student(){
+    public Student() throws ParseException {
         this.document = "32";
         this.name="Oscar";
         this.lastName="Mesa";
-        this.birthDate = new Date("1990-10-01");
+
+        String dDate="1990-10-01";
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+
+        this.birthDate = df.parse(dDate);
         this.languages = new String[10];
         this.languages[0] = "ingles";
         this.languages[1] = "japones";
         }
+
+    public String getDocument() {
+        return document;
+    }
+
+    public void setDocument(String document) {
+        this.document = document;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
+    }
 }
