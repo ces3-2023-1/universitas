@@ -90,6 +90,7 @@
                 <a class="button is-link"><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
+        Documento: <%= request.getParameter("document") %>
 
         <div class="inbox-messages" id="inbox-messages">
             <div v-for="(msg, index) in messages" class="card" v-bind:id="'msg-card-'+index" v-on:click="showMessage(msg,index)" v-bind:data-preview-id="index">
